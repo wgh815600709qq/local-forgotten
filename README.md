@@ -9,7 +9,7 @@
     * 周期性日期，每天提示一次；   [Once_A_Day_On_Duration]  例如“房租”  期间
 
 
-### 安装包
+### 安装依赖
 ```
 客户端 npm install
 服务端 cd server
@@ -24,5 +24,5 @@
 ### 本地启动nodejs长运行脚本
 ```
  cd server
-  npm run product
+  npm run product  // 采用PM2管理
 ```
