@@ -18,7 +18,7 @@
 
 ### 客户端打包
 ```
-   npm run 
+   npm run packageWin // 打出window版本exe,客户端，用于动态管理备忘录
 ```
 
 ### 本地启动nodejs长运行脚本
