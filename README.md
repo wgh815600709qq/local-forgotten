@@ -9,8 +9,20 @@
     * 周期性日期，每天提示一次；   [Once_A_Day_On_Duration]  例如“房租”  期间
 
 
+### 安装包
+```
+客户端 npm install
+服务端 cd server
+ npm install
+```
 
-## 页面包含
+### 客户端打包
+```
+   npm run 
+```
 
-*  备忘录列表
-*  添加备忘录【内容 + 规则】
+### 本地启动nodejs长运行脚本
+```
+ cd server
+  npm run product
+```
