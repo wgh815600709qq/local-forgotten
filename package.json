@@ -1,0 +1,25 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "window/main.js",
+  "scripts": {
+    "start": "electron .",
+    "packageWin": "electron-packager ./ window --out ./package --overwrite --icon=./assets/smile.ico "
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.4"
+  },
+  "dependencies": {
+    "electron-packager": "^12.2.0"
+  }
+}

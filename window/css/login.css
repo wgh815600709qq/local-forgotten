@@ -1,0 +1,132 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    -webkit-app-region: drag;
+}
+.no-drag{
+    -webkit-app-region: no-drag;
+}
+.login-container{
+    height: 100%;
+}
+.login-header{
+    box-sizing: border-box;
+    height: 130px;
+    background: linear-gradient(to bottom right, lightblue, purple);
+    display: flex;
+    align-items: flex-start
+}
+.label-left{
+    flex:1;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px 20px;
+}
+.label-left img{
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+.label-right{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+}
+.label-right img{
+    width: 18px;
+    height: 18px;
+    margin: 10px;
+}
+.login-body{
+    box-sizing: border-box;
+    height: calc(100% - 200px);
+    padding: 20px;
+    display: flex;
+}
+.item{
+    flex: 1;
+    border-right: 1px solid #eee;
+    font-size: 14px;
+    margin: 0 auto;
+}
+textarea{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+.flex-box{
+    display: flex;
+}
+.btn{
+    display: block;
+
+    text-align: center;
+    font-size:14px;
+    width: 130px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.btn:hover{
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transform: translateY(-1px);
+}
+.save{
+  background-color: green;
+  color: #fff;
+}
+.delete{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+.show{
+    display: block;
+    margin-left: 20px;
+}
+.hide{
+    display: none;
+}
+
+.items{
+    position: relative;
+    display: block;
+    margin-left: 20px;
+}
+.stretch{
+    margin-left: -20px;
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.left-part{
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #eee;
+}
+.title{
+  margin-bottom: 20px;
+  
+}
+.content{
+  width: 100%;
+  height: 300px;
+}
+.titles{
+  width: 300px;
+}
+
+.list-item:hover{
+  background-color: aqua
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="../css/login.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>备忘录工具</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+</head>
+
+
+
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <div class="label-left">
+        <img src="../../assets/images/avatar.png" alt="应用标致"></img>
+        <span>动态备忘录【个人定制版】</span>
+      </div>
+      <div class="label-right">
+        <img src="../../assets/images/min.png" alt="最小化" title="最小化" id="min" class="no-drag">
+        <img src="../../assets/images/close.png" alt="关闭窗口" title="关闭" id="close" class="no-drag">
+      </div>
+    </div>
+    <div class="login-body">
+      <div class="left-part">
+        <div class="title">备忘录列表</div>
+        <div id="item-list" class="no-drag">
+
+        </div>
+      </div>
+      <div class="item">
+        <div class="title"> 标题：
+          <input type="text" id="title" class="no-drag titles" />
+        </div>
+        <div class="content">
+          <div>内容：</div>
+          <textarea type="text" id="content" class="no-drag"></textarea>
+        </div>
+      </div>
+      <div class="item">
+        <pre class="no-drag">
+          *  *  *  *  *  *
+          ┬ ┬ ┬ ┬ ┬ ┬
+          │ │ │ │ │ |
+          │ │ │ │ │ └ day of week (0 - 7) (0 or 7 is Sun)
+          │ │ │ │ └───── month (1 - 12)
+          │ │ │ └────────── day of month (1 - 31)
+          │ │ └─────────────── hour (0 - 23)
+          │ └──────────────────── minute (0 - 59)
+          └───────────────────────── second (0 - 59, OPTIONAL)
+        </pre>
+        <div>定时</div>
+        <pre class="no-drag">
+            每分钟的第30秒触发： '30 * * * * *'
+
+            每小时的1分30秒触发 ：'30 1 * * * *'
+            
+            每天的凌晨1点1分30秒触发 ：'30 1 1 * * *'
+            
+            每月的1日1点1分30秒触发 ：'30 1 1 1 * *'
+            
+            2016年的1月1日1点1分30秒触发 ：'30 1 1 1 2016 *'
+            
+            每周1的1点1分30秒触发 ：'30 1 1 * * 1'
+        </pre>
+        <div>范围</div>
+        <pre class="no-drag">
+            每分钟的1-10秒都会触发： '1-10 * * * * *'
+        </pre>
+        <div class="flex-box">
+          <div>规则：</div>
+          <input type="text" class="no-drag titles" id="rule" />
+        </div>
+        <div class="flex-box">
+          <div id="save" class="no-drag btn save">保存</div>
+          <div id="delete" class="no-drag btn delete">删除此备忘</div>
+          <div id="refresh" class="no-drag btn save">刷新</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="../pagejs/login.js"></script>
+
+</body>
+
+</html>
